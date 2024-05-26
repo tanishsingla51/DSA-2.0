@@ -13,7 +13,7 @@ public class index_3 {
     }
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
+        // TODO Auto-generated methods stub
 
         Scanner s = new Scanner(System.in);
 
