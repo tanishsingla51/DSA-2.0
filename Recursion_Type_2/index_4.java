@@ -24,3 +24,5 @@ public class index_4 {
         combination(n, "");
     }
 }
+/// goggle question at home
+// pnc binomial theorem and probability
