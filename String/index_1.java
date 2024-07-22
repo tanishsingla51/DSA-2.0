@@ -49,7 +49,7 @@ public class index_1 {
 
         System.out.println(str1.compareTo(str4)); // subtract ASCII value of first character of str1 from first character of str2
 
-        if (str1.compareTo(str4) > 0) {
+        if (str1.compareTo(str4) > 0) { 
             System.out.println(str1);
 
         } else {

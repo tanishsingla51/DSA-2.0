@@ -5,8 +5,8 @@ import java.util.*;
 public class index_4 {
 
     public static void printAllFrequency(String str) {
-
-        int[] freq = new int[256];
+ 
+        int[] freq = new int[256]; 
 
         for (int i = 0; i < str.length(); i++) {
 

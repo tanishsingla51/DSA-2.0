@@ -13,6 +13,7 @@ public class index_2 {
         list.add(20);
         list.add(30);
         list.add(40);
+        list.add(50);
 
         for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i)+" ");

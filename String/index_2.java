@@ -19,10 +19,10 @@ public class index_2 {
 
 
         // Get Character at any Index
-        System.out.println(str2.charAt(1));
+       // System.out.println(str2.charAt(1));
 
         // String Ka Length
-        System.out.println(str.length());
+       // System.out.println(str.length());
 
     }
 
