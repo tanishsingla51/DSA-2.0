@@ -2,38 +2,36 @@ package String;
 
 public class leetcode205 {
 
-    public static void isIsomorphic(String s, String t) {
+    public static boolean isIsomorphic(String s, String t) {
 
         if (s.equals(t)) {
 
-            System.out.println(true);
-            return;
-
+           // System.out.println(true);
+            return true;
         }
 
-        int sameS = 0;
-        int sameT = 0;
+        if (s.length() != t.length()) {
+
+           // System.out.println(false);
+            return false;
+        }
+
+        int[] arr = new int[256];
 
         for (int i = 0; i < s.length(); i++) {
-            // char ch = s.charAt(i);
-            for (int j = i + 1; j < s.length(); j++) {
 
-                if (s.charAt(i) == s.charAt(j)) {
-                    sameS++;
+            if (arr[s.charAt(i)] != arr[t.charAt(i) + 128]) {
 
-                }
-
-                if (t.charAt(i) == t.charAt(j)) {
-                    sameT++;
-                }
+              //  System.out.println(false);
+                return false;
             }
+
+            arr[s.charAt(i)] = i + 1;
+            arr[t.charAt(i) + 128] = i + 1;
         }
 
-        if (sameS == sameT) {
-            System.out.println(true);
-        } else {
-            System.out.println(false);
-        }
+       // System.out.println(true);
+        return true;
 
     }
 
@@ -45,3 +43,5 @@ public class leetcode205 {
         isIsomorphic(s, t);
     }
 }
+
+// again checking the code
