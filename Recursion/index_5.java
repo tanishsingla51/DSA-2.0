@@ -12,6 +12,7 @@ public class index_5 {
         int smallOutput = printArraySum(arr, i + 1);
         int meraOutput = arr[i] + smallOutput;
         return meraOutput;
+        
     }
 
     public static void main(String[] args) {

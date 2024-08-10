@@ -12,10 +12,10 @@ public class myLinklist {
 
         Node new_node = new Node(val);
         new_node.next = head;
-        head = new_node;
+        head = new_node; 
 
-    }
-
+    } 
+    
     public void display() {
 
         Node temp = head;
@@ -84,7 +84,7 @@ public class myLinklist {
 
         while (jump > 0) {
             temp = temp.next;
-            // jump--;
+            jump--;
         }
 
         Node new_node = new Node(val);
@@ -111,7 +111,7 @@ public class myLinklist {
 
         while (jump > 0) {
             temp = temp.next;
-            // jump--;
+            jump--;
         }
 
         Node temp2 = temp.next;
@@ -120,3 +120,9 @@ public class myLinklist {
         
     }
 }
+
+// please explain me the functions insertAtAnyIndex and removeAtAnyIndex
+
+// insertAtAnyIndex: This function is used to insert a new node at any index in the linked list. The function takes two parameters: the index at which the new node is to be inserted and the value of the new node. The function first checks if the index is 0, in which case it calls the addAtBegining function to insert the new node at the beginning of the linked list. If the index is not 0, the function iterates through the linked list to find the node at the index before the insertion index. It then creates a new node with the given value and inserts it between the node at the index before the insertion index and the node at the insertion index.
+
+// removeAtAnyIndex: This function is used to remove a node at any index in the linked list. The function takes one parameter: the index of the node to be removed. The function first checks if the linked list is empty, in which case it throws an exception. If the index is 0, the function calls the removeAtBegin function to remove the first node in the linked list. If the index is not 0, the function iterates through the linked list to find the node at the index before the node to be removed. It then removes the node at the given index by updating the next pointer of the node at the index before the node to be removed to skip over the node to be removed. The removed node is then disconnected from the linked list by setting its next pointer to null.

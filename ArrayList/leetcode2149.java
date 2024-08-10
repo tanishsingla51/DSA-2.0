@@ -16,6 +16,7 @@ public class leetcode2149 {
 
                 ans[index] = nums[i];
                 index++;
+
             }
         }
         System.out.println(Arrays.toString(ans));
