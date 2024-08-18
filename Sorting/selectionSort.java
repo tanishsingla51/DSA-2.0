@@ -1,7 +1,6 @@
 package Sorting;
 
 import java.util.Arrays;
-
 public class selectionSort {
 
     public static void selectionSorting(int[] arr) {
@@ -16,7 +15,7 @@ public class selectionSort {
             arr[last] = temp;
         }
 
-         System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr));
 
     }
 
@@ -28,9 +27,7 @@ public class selectionSort {
                 maxIndex = i;
             }
         }
-
         return maxIndex;
-
     }
 
     public static void main(String[] args) {
